@@ -1,0 +1,76 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: var(--background-fav2);
+    box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.253), 0 6px 6px rgba(0, 0, 0, 0.274);
+    color: var(--light-white);
+    font-size: 1.3em;
+    margin: 5% 10%;
+    padding: 50px;
+    height: calc(100% - 100px);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--light-white);
+    background-color: var(--textinput-background);
+    color: var(--text-color-black);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header-icon {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.title-category {
+    color: var(--light-white);
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.divider {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-parent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+}
+
+.card-parent p {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid var(--ambar);
+    border-radius: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    max-height: 200px;
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+}
