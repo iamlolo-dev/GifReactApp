@@ -8,25 +8,32 @@ const GifExpertApp = () => {
 
     const [categories, setCategories] = useState([]);
 
+    const onAddCategory = ( newCategory ) => {
+
+        if ( categories.includes(newCategory) ) return;
+
+        setCategories([ newCategory, ...categories ]);
+    }
+
     return (
         <>
-            <div className='header-icon'>
-                <IconReact width={180} height={80} />
-                <h2>Gif-ReactJS App</h2>
+            <div className='header'>
+                <IconReact className='header-icon' />
+                <p className='header-text'>Stealth Gifts App</p>
             </div>
-            <AddCategory setCategories={setCategories} />
+            <AddCategory 
+                onNewCategory={ (value) => onAddCategory(value) }
+            />
             <hr className='divider'/>
 
-            <div>
-                {
-                    categories.map(category => (
-                        <GifGrid
-                            key={category}
-                            category={category}
-                        />
-                    ))
-                }
-            </div>
+            {
+                categories.map(category => (
+                    <GifGrid
+                        key={category}
+                        category={category}
+                    />
+                ))
+            }
         </>
     )
 }

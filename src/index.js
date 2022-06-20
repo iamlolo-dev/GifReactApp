@@ -6,8 +6,8 @@ import './index.css';
 import './colors.css';
 
 
-ReactDOM.createRoot(document.getElementById('app'))
-    .render
-    (
+const root = ReactDOM.createRoot(document.getElementById('app'));
+
+root.render(
         <GifExpertApp />
-    )
+);

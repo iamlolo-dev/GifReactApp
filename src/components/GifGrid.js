@@ -2,7 +2,6 @@ import React from 'react'
 
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
-import { IconReact } from '../components/IconReact';
 
 export const GifGrid = ({ category }) => {
 
@@ -18,7 +17,6 @@ export const GifGrid = ({ category }) => {
 
                 {
                     images.map(item => (
-
                         <GifGridItem
                             key={item.id}
                             {...item}
