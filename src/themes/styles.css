@@ -98,6 +98,11 @@ input[type=text] {
 .card-parent p {
     font-size: 0.7em;
     text-align: center;
+    
+    width: 280px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .card {
